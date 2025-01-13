@@ -13,8 +13,9 @@ public class StudentController {
     List<Student> studentsList = new ArrayList<>(List.of( new Student(1,"Thoru","Computer"),
             new Student(2,"Vk","Maths")));
     @RequestMapping("/students")
-    public List<Student> getAllStudents(){
-        return studentsList;
+    public List<Student> getAllStudents(HttpServletRequest request){
+        System.out.println(request.getSession().getId());
+        return studentsList ;
     }
 
     @PostMapping("/students")
