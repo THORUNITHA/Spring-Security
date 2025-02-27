@@ -1,4 +1,4 @@
-package com.security.demo;
+package com.security.demo.repo;
 
 public class Student {
     private int id;

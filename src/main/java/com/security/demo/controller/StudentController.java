@@ -1,5 +1,6 @@
-package com.security.demo;
+package com.security.demo.controller;
 
+import com.security.demo.repo.Student;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.*;
